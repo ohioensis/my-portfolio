@@ -1,0 +1,51 @@
+.page-nav {
+	width: 70%;
+}
+
+.page-nav__list {
+	display: flex;
+	justify-content: space-between;
+	.no-list();
+}
+
+.page-nav__item--logo {
+	margin-right: 5%;
+}
+
+.page-nav__item--logo span:first-child {
+	margin-right: 1.2em;
+}
+
+.page-nav__item--logo span:last-child {
+	position: relative;
+	color: @red;
+}
+
+.page-nav__item--logo span:last-child::before {
+	.before();
+}
+
+.page-nav__item a {
+	position: relative;
+	display: block;
+	font-family: @roboto;
+	font-weight: 300;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	text-transform: lowercase;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.page-nav__item a::before {
+	.before();
+	top: 0.2em;
+}
+
+.page-nav__item a:hover::before {
+	background-color: @red;
+}
+
+.page-nav__item--logo a::before {
+	display: none;
+}

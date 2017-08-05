@@ -1,0 +1,87 @@
+.contacts {
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	background-color: @pink;
+	background-image: url("../img/background-contacts.jpg");
+	background-size: 1400px auto;
+	background-position: center;
+	color: #000000;
+}
+
+.contacts__content {
+	position: relative;
+	min-width: 45%;
+	margin: 0 auto;
+	margin-top: 8%;
+	font-weight: 300;
+}
+
+.contacts__inner-wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 3em;
+}
+
+.contacts__list {
+	.no-list();
+	font-family: @roboto;
+	font-weight: 300;
+	font-size: 1.2em;
+	color: #75767c;
+}
+
+.contacts__item {
+	position: relative;
+	.no-margin();
+	margin-bottom: 1em;
+}
+
+.contacts__item a {
+	text-decoration: none;
+	color: @blue;
+}
+
+.contacts__item::before {
+	.before();
+}
+
+.contacts__links {
+	display: flex;
+	justify-content: space-between;
+	min-width: 50%;
+	.no-list();
+}
+
+.contacts__link {
+	width: 49%;
+	height: auto;
+}
+
+.contacts__link a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: right;
+	opacity: 0.6;
+}
+
+.contacts__link:first-child a {
+	background-image: url("../img/icon-fb.png");
+}
+
+.contacts__link:last-child a {
+	background-image: url("../img/icon-git.png");
+}
+
+.contacts__link a:hover {
+	opacity: 1;
+}
+
+.contacts__up {
+	margin-top: 5em;
+}

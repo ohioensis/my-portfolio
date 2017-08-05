@@ -1,0 +1,23 @@
+.page-lang {
+	margin-left: auto;
+}
+
+.page-lang a {
+	position: relative;
+	display: block;
+	font-family: @roboto;
+	font-weight: 300;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	text-transform: lowercase;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.page-lang a::before {
+	.before();
+}
+
+.page-lang a:hover::before {
+	background-color: @red;
+}

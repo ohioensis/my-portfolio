@@ -1,0 +1,97 @@
+.portfolio-item {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	min-height: 100vh;
+	background-color: #ffffff;
+}
+
+.portfolio-item--test {
+	background-image: url("../img/background-test.jpg");
+	background-size: cover;
+	background-position: top;
+	@media @retina {
+		background-image: url("../img/background-test-2x.jpg");
+	}
+}
+
+.portfolio-item--experium {
+	background-image: url("../img/background-experium.jpg");
+	background-size: cover;
+	background-position: top;
+	@media @retina {
+		background-image: url("../img/background-experium-2x.jpg");
+	}
+}
+
+.portfolio-item--technomart {
+	background-image: url("../img/background-technomart.jpg");
+	background-size: cover;
+	background-position: top;
+	@media @retina {
+		background-image: url("../img/background-technomart-2x.jpg");
+	}
+}
+
+.portfolio-item--sedona {
+	background-image: url("../img/background-sedona.jpg");
+	background-size: cover;
+	background-position: top;
+	@media @retina {
+		background-image: url("../img/background-sedona-2x.jpg");
+	}
+}
+
+.portfolio-item--brandly {
+	background-image: url("../img/background-brandly.jpg");
+	background-size: cover;
+	background-position: top;
+	@media @retina {
+		background-image: url("../img/background-brandly-2x.jpg");
+	}
+}
+
+.portfolio-item__content {
+	width: 30%;
+	min-width: 350px;
+	margin: auto;
+	margin-right: 15%;
+	padding: 2em 3%;
+	font-family: @roboto;
+	font-weight: 300;
+	color: #ffffff;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio-item__title {
+	position: relative;
+	.no-margin();
+	text-transform: lowercase;
+	font-weight: 300;
+	font-size: 3em;
+}
+
+.portfolio-item__title--test {
+	color: @pink;
+}
+
+.portfolio-item__title--experium {
+	color: @purple;
+}
+
+.portfolio-item__title--technomart {
+	color: @yellow;
+}
+
+.portfolio-item__title--sedona {
+	color: @light-blue;
+}
+
+.portfolio-item__title--brandly {
+	color: @bright-red;
+}
+
+.portfolio-item__content p {
+	font-size: 0.9em;
+	line-height: 1.2em;
+}

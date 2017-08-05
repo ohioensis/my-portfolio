@@ -1,0 +1,60 @@
+.control {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	font-size: 0;
+	border: none;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.7);
+	cursor: pointer;
+	&:hover {
+		background-color: #ffffff;
+	}
+}
+
+.control--down {
+	margin-top: 4%;
+}
+
+.control::before,
+.control::after {
+	position: absolute;
+	top: 17px;
+	content: "";
+	width: 1px;
+	height: 10px;
+	background-color: #ffffff;
+	
+}
+
+.control::before {
+	left: 16px;
+	transform: rotate(-45deg);
+}
+
+.control::after {
+	left: 23px;
+	transform: rotate(45deg);
+}
+
+.control:hover::before,
+.control:hover::after {
+	background-color: #474342;
+}
+
+.control--up::before,
+.control--up::after {
+	top: 14px;
+}
+
+.control--up::before {
+	left: 16px;
+	transform: rotate(45deg);
+}
+
+.control--up::after {
+	left: 23px;
+	transform: rotate(-45deg);
+}
